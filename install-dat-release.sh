@@ -15,8 +15,8 @@
 
 # You can modify it to /usr/local/lib/v2ray
 V2RAY="/usr/local/share/v2ray"
-DOWNLOAD_LINK_GEOIP="https://github.com/v2fly/geoip/releases/latest/download/geoip.dat"
-DOWNLOAD_LINK_GEOSITE="https://github.com/v2fly/domain-list-community/releases/latest/download/dlc.dat"
+DOWNLOAD_LINK_GEOIP="https://github.com/IceCodeNew/v2ray-rules-dat/raw/release/geoip.dat"
+DOWNLOAD_LINK_GEOSITE="https://github.com/IceCodeNew/v2ray-rules-dat/raw/release/geosite.dat"
 file_ip='geoip.dat'
 file_dlc='dlc.dat'
 file_site='geosite.dat'
@@ -56,7 +56,9 @@ check_sum() {
 
 install_file() {
     install -m 644 "${dir_tmp}"/${file_dlc} "${V2RAY}"/${file_site}
+    [ -d '/mnt/resilio_sync/folders/v2ray-all-in-one' ] && install -m 644 "${dir_tmp}"/${file_dlc} '/mnt/resilio_sync/folders/v2ray-all-in-one'/${file_site}
     install -m 644 "${dir_tmp}"/${file_ip} "${V2RAY}"/${file_ip}
+    [ -d '/mnt/resilio_sync/folders/v2ray-all-in-one' ] && install -m 644 "${dir_tmp}"/${file_ip} '/mnt/resilio_sync/folders/v2ray-all-in-one'/${file_ip}
     rm -r "${dir_tmp}"
 }
 

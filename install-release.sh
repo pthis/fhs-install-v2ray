@@ -4,13 +4,13 @@
 # https://wiki.linuxfoundation.org/lsb/fhs
 
 # The URL of the script project is:
-# https://github.com/v2fly/fhs-install-v2ray
+# https://github.com/IceCodeNew/fhs-install-v2ray
 
 # The URL of the script is:
-# https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh
+# https://raw.githubusercontent.com/IceCodeNew/fhs-install-v2ray/master/install-release.sh
 
 # If the script executes incorrectly, go to:
-# https://github.com/v2fly/fhs-install-v2ray/issues
+# https://github.com/IceCodeNew/fhs-install-v2ray/issues
 
 # You can set this variable whatever you want in shell session right before running this script by issuing:
 # export DAT_PATH='/usr/local/share/v2ray'
